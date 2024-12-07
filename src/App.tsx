@@ -1,16 +1,9 @@
-import { useState } from "react";
+import Router from "./Router";
 
 function App(){
-  const [count, setCount] = useState(0);
-
-  const onClick = () => {
-    setCount(count + 1);
-  };
-
   return (
     <div>
-      <button onClick={onClick}>Click me</button>
-      <div>버튼 클릭 횟수: {count}회</div>
+      <Router />
     </div>
   );
 };
